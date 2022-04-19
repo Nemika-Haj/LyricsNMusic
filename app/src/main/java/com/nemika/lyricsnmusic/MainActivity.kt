@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         // Setup
         findViewById<TextView>(R.id.lyrics).movementMethod = ScrollingMovementMethod()
+        val githubView: ImageView = findViewById(R.id.githubImage)
+        githubView.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Nemika-Haj/LyricsNMusic"))
+            startActivity(intent)
+        }
 
         // Other
         val getButton: Button = findViewById(R.id.fetchLyricsButton)

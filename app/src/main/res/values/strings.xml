@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Lyrics N\' Music</string>
     <string name="enter_song_hint">Enter Song</string>
-    <string name="example_input">(song name) by (author) : Author is Optional</string>
+    <string name="example_input">(song name) [by (author)] : Author is Optional</string>
     <string name="fetch_lyrics_button">Fetch Lyrics</string>
     <string name="download_song_switch_text">Download Song</string>
     <string name="download_button">Download</string>
+    <string name="github_repo">Github Repo</string>
 </resources>
