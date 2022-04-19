@@ -14,8 +14,6 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import com.nemika.lyricsnmusic.data.LyricsData
 import com.nemika.lyricsnmusic.data.YoutubeData
 import retrofit2.Call
@@ -27,7 +25,6 @@ import java.io.File
 import java.io.FileOutputStream
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.system.exitProcess
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -141,7 +138,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun getLyrics() {
-        var song: String = findViewById<TextView>(R.id.songInput).text.toString()
+        var song: String = findViewById<TextView>(R.id.songInput).text.toString().lowercase()
         var author = ""
 
         if (song.contains(" by ")) {
