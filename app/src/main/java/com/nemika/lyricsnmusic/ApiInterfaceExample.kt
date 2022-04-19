@@ -9,7 +9,7 @@ import retrofit2.http.Query
 
 
 // Rename to ApiInterface
-interface ApiInterface_Example {
+interface ApiInterfaceExample {
     @GET("lyrics")
     @Headers("Authorization: YourApiKey")
     fun fetchLyrics(@Query("song") songName: String, @Query("author") authorName: String): Call<LyricsData>
